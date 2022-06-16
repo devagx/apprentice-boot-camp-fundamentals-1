@@ -55,11 +55,7 @@ public class Cards {
                 default:
                     throw new IllegalArgumentException("Something went wrong " + card.getFaceValue() + "is not a valid faceValue!");
             }
-
-            String suitName;
-            suitName = card.getSuit().name().toLowerCase();
-
-            result[cardNumber] = faceValueName + " of " + suitName;
+            result[cardNumber] = faceValueName + " of " + card.getSuit().name().toLowerCase();
             cardNumber++;
         }
 
