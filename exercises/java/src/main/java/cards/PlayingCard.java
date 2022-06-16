@@ -1,15 +1,15 @@
 package cards;
 
 public class PlayingCard {
-    private int suit;
+    private Suit suit;
     private int faceValue;
 
     public PlayingCard () {}
-    public int getSuit() {
+    public Suit getSuit() {
         return suit;
     }
 
-    public void setSuit(int suit) {
+    public void setSuit(Suit suit) {
         this.suit = suit;
     }
 
